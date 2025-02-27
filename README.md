@@ -1,3 +1,50 @@
+Introducción:
+
+Nombre del proyecto: EvaluAI: Sistema Inteligente de Evaluación Personalizada
+
+Presentación del problema a abordar: 
+
+Los modelos de evaluación, en cualquier contexto académico, presentan varios retos que afectan tanto a estudiantes como a docentes. Por un lado, representan una alta carga de trabajo en la creación y calificación de evaluaciones, y por otro, pueden generar resultados que no reflejan realmente el nivel de aprendizaje del estudiante. Esto hace que el proceso de evaluación no siempre cumpla con su objetivo de guiar y fortalecer el aprendizaje.
+
+Desarrollo de la propuesta de solución: https://docs.google.com/presentation/d/1tBzzcWsBP75z4YzUfANiHHSaVlYiCEyAuHfUPpCEUeA/edit?usp=sharing
+
+Justificación de la viabilidad del proyecto: 
+
+https://docs.google.com/document/d/1ox35gb39z97HDUgE6H1lNncJlEBfzp-L6LBJw2pXW58/edit?tab=t.0
+
+Objetivos: 
+
+El proyecto busca automatizar la evaluación académica de niños de entre 10 y 15 años mediante IA. Para ello, realiza las siguientes tareas:
+
+1) Carga un documento de referencia proporcionado por el profesor.
+2) Solicita información al estudiante sobre su edad y un tema de interés para contextualizar la evaluación.
+3) Genera una pregunta basada en el documento, adaptada al contexto del tema y la edad del estudiante.
+4) Evalúa la respuesta del estudiante y asigna una calificación binaria (10 puntos si es correcta, 0 si es incorrecta).
+5) Genera una imagen personalizada con la calificación obtenida, representada con el tema elegido.
+
+El enfoque es proporcionar una evaluación inmediata, personalizada y visualmente atractiva, facilitando el aprendizaje infantil a través de IA generativa.
+
+
+Metodología: 
+
+1. One-shot Prompting (Predominante)
+Este método se usa en:
+
+- Generación de la pregunta: Se le da un ejemplo implícito en la estructura del prompt, asegurando que la pregunta sea clara y tenga una respuesta numérica.
+- Evaluación de la respuesta: Se le indica explícitamente al modelo que devuelva solo "10" o "0", minimizando respuestas ambiguas.
+- Generación de la imagen: Se estructura la descripción de la imagen en un solo intento para obtener un resultado directo.
+
+2. Contextual Prompting
+Se emplea al personalizar la pregunta con base en:
+
+- La información extraída del documento .txt.
+- La edad del estudiante, asegurando una dificultad adecuada.
+- El tema elegido por el estudiante para hacer la evaluación más atractiva.
+
+3. Instruction-Based Prompting
+- Se le dan instrucciones claras y detalladas al modelo sobre su rol (ejemplo: "Eres un profesor especializado en evaluación infantil").
+- Se delimita el tipo de respuesta esperada para evitar desviaciones.
+
 # Evaluación Automática con IA para Niños
 
 Este proyecto utiliza la API de OpenAI para generar una evaluación infantil basada en un documento de texto. Se generan 5 preguntas, una a una, esperando la respuesta del estudiante antes de continuar. La evaluación es binaria: 1 punto por respuesta correcta, 0 por incorrecta.
