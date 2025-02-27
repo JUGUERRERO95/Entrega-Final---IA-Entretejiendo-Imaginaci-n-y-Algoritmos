@@ -188,6 +188,23 @@ if __name__ == "__main__":
 
 Si deseas mejorar este proyecto, envía un PR o abre un issue en el repositorio.
 
-## Licencia
+## IMAGEN DE RESPUESTA
 
-MIT License
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-uBowqj4hNRRQM9XPdiEoaoNc/user-pZWMc4Gt4cen3F2EPPzUO0Oa/img-ySYN7Vl3Lxf2Oh1AeweMSE7J.png?st=2025-02-27T21%3A23%3A26Z&se=2025-02-27T23%3A23%3A26Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-27T17%3A44%3A01Z&ske=2025-02-28T17%3A44%3A01Z&sks=b&skv=2024-08-04&sig=hUq3egYOE7okHza8SPv2b4CnNX5mp8Q/UBNhIyjmPdU%3D
+
+## Conclusiones
+
+Automatización efectiva con IA
+El uso de OpenAI GPT para la generación de preguntas y evaluación de respuestas ha demostrado ser altamente eficiente. Implementar One-shot Prompting y Contextual Prompting permitió obtener preguntas bien formuladas sin necesidad de entrenamiento adicional del modelo. Esto optimiza el rendimiento y minimiza la necesidad de intervención manual.
+
+Optimización del flujo de preguntas
+Modificar el código para generar 5 preguntas de manera secuencial mejoró la experiencia del usuario, asegurando que el estudiante reciba y responda cada pregunta antes de continuar. Esto facilitó la integración en un flujo conversacional más natural.
+
+Generación visual con IA (DALL·E 3)
+La implementación de generación de imágenes con DALL·E 3 representando la calificación final del estudiante le dio un valor agregado al proyecto. La forma en que se estructuró el prompt visual permitió personalizar la experiencia del usuario y hacer que la evaluación sea más atractiva.
+
+Escalabilidad y mejoras futuras
+
+- Se puede optimizar el código para admitir más formatos de respuesta, no solo numéricos.
+- Integrar opciones de evaluación parcial para respuestas casi correctas.
+- Implementar una interfaz gráfica más intuitiva en lugar de interacción basada en consola.
