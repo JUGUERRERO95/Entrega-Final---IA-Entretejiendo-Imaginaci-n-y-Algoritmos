@@ -1,4 +1,4 @@
-Introducción:
+## Introducción:
 
 Nombre del proyecto: EvaluAI: Sistema Inteligente de Evaluación Personalizada
 
@@ -12,7 +12,7 @@ Justificación de la viabilidad del proyecto:
 
 https://docs.google.com/document/d/1ox35gb39z97HDUgE6H1lNncJlEBfzp-L6LBJw2pXW58/edit?tab=t.0
 
-Objetivos: 
+## Objetivos: 
 
 El proyecto busca automatizar la evaluación académica de niños de entre 10 y 15 años mediante IA. Para ello, realiza las siguientes tareas:
 
@@ -25,7 +25,7 @@ El proyecto busca automatizar la evaluación académica de niños de entre 10 y 
 El enfoque es proporcionar una evaluación inmediata, personalizada y visualmente atractiva, facilitando el aprendizaje infantil a través de IA generativa.
 
 
-Metodología: 
+## Metodología: 
 
 1. One-shot Prompting (Predominante)
 Este método se usa en:
